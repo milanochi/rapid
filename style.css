@@ -39,7 +39,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -99999px;
+  z-index: 99999px;
+  border-radius: 25px;
 
 }
 
