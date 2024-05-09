@@ -73,7 +73,7 @@
   <!--HERO SECTION-->
   <section class="" id="hero">
     <!-- FLEXBOX CONTAINER-->
-    <div class="container mx-auto flex-col md:flex md:flex-row justify-between md:items-center">
+    <div class="w-full container mx-auto flex-col md:flex md:flex-row md:space-x-14 justify-between md:items-center">
       <!--LEFT FLEX CONTAINER-->
       <div class="w-full py-0 px-6 flex flex-col items-center md:flex-row md:px-0">
 
@@ -88,7 +88,7 @@
           </div>
           <!--SOCIAL LINKS-->
 
-          <div class="flex flex-col space-y-6 z-[10000px]">
+          <div class="flex flex-col space-y-6">
             <div class="flex flex-col items-center space-y-5 md:items-start">
               <div class="flex space-x-4">
                 <p class="max-w-xl text-center text-xs space-y-4 text-lighBlack md:text-2xl font-medium lg:text-left">
@@ -115,16 +115,19 @@
       <!-- END OF LEFT FLEX CONTAINER -->
 
       <!-- RIGHT FLEX CONTAINER -->
-      <div class="gradient hero md:h-0 h-[30rem] mb-6 md:mb-0"></div>
+      <div class="w-full md:w-[50%]">
+        <div class="gradient hero h-[30rem] mb-6 md:mb-0 object-cover"></div>
+      </div>
       <!--END RIGHT FLEX CONTAINER -->
+
     </div>
   </section>
 
   <!-- CARDS -->
   <section
-    class="container mx-auto items-center justify-center space-y-6 md:flex md:justify-between space-x-6 mb-[3rem] mt-0 md:-mt-[6rem]">
+    class="bg-red-300 container mx-auto items-center justify-center space-y-6 md:flex md:justify-between space-x-6 mb-[3rem] mt-0 md:-mt-[0rem]">
     <!-- FLEXBOX -->
-    <div class="space-y-6 md:space-y-0 md:flex md:items-center md:space-x-6">
+    <div class="space-y-6 md:space-y-0 md:flex md:items-center md:space-x-6 ">
       <div class="card flex items-center rounded-full w-full px-6 py-8">
         <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
         <div class="text-sm">
