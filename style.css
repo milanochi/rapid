@@ -43,6 +43,22 @@ body {
 
 }
 
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.question {
+  background-color: #f0f0f0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+}
+
+
 @media (max-width: 760px) {
   .hamburger {
     cursor: pointer;

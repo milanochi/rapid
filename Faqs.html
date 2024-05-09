@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Faqs</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.question');
+                const answer = item.querySelector('.answer');
+
+                question.addEventListener('click', () => {
+                    const isOpen = item.classList.contains('open');
+
+                    faqItems.forEach(item => {
+                        item.classList.remove('open');
+                        item.querySelector('.answer').style.display = 'none';
+                    });
+
+                    if (!isOpen) {
+                        item.classList.add('open');
+                        answer.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+    <nav class="relative p-4">
+        <div class="container mx-auto flex items-center justify-between space-x-6">
+            <!---LOGO-->
+            <div class="pt-2 ">
+                <img src="/assets/logo.jpg" class="logo h-[4rem]" alt="logo" />
+            </div>
+            <div class="hidden md:flex space-x-12 text-sm">
+                <a href="index.html" class="text-black font-bold navlinks">HOME</a>
+                <a href="aboutUs.html" class="text-black font-bold navlinks">ABOUT US</a>
+                <a href="index2.html" class="text-black font-bold navlinks">CONTACT US</a>
+                <a href="Faqs.html" class="text-black font-bold navlinks underline">FAQS</a>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="hidden md:flex space-x-20">
+                <div>
+                    <input
+                        class="bg-gray-200 appearance-none border-2 border-gray-200 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 rounded-full"
+                        id="inline-full-name" type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <!-- LOGIN BUTTON-->
+            <div class="hidden md:flex space-x-20 ">
+                <div class="md:max-w-sm px-20 md:text-start md:px-0 relative">
+                    <a href="#"><button
+                            class="relative gradient py-2 px-3 text-md text-white font-semibold rounded-full md:px-6">Login</button>
+                    </a>
+                </div>
+            </div>
+    </nav>
+
+    <div class="container mx-auto faq-container">
+        <h1 class="text-3xl mb-6 mt-[5rem]">Frequently Asked Questions(<span class="text-darkGreen">Faqs</span>)</h1>
+        <div class="faq-item ">
+            <div class="question rounded-md flex justify-between">
+                Question 1 <i class="fas fa-chevron-down arrow"></i>
+            </div>
+            <div class="answer">Answer 1</div>
+        </div>
+
+        <div class="faq-item ">
+            <div class="question rounded-md flex justify-between">
+                Question 2 <i class="fas fa-chevron-down arrow"></i>
+            </div>
+            <div class="answer">Answer 2</div>
+        </div>
+
+        <div class="faq-item ">
+            <div class="question rounded-md flex justify-between">
+                Question 2 <i class="fas fa-chevron-down arrow"></i>
+            </div>
+            <div class="answer">Answer 2</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
