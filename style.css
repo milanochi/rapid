@@ -58,6 +58,10 @@ body {
   padding: 10px;
 }
 
+#copyright {
+  border-top: 1px solid white;
+}
+
 
 @media (max-width: 760px) {
   .hamburger {
