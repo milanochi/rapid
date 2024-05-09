@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <nav class="relative p-4">
+    <div class="container mx-auto flex items-center justify-between space-x-6">
+      <!---LOGO-->
+      <div class="pt-2 ">
+        <img src="/assets/logo.jpg" class="logo h-[4rem]" alt="logo" />
+      </div>
+      <div class="hidden md:flex space-x-12 text-sm">
+        <a href="aboutUs.html" class="text-black font-bold navlinks">ABOUT US</a>
+        <a href="index2.html" class="text-black font-bold navlinks">CONTACT US</a>
+        <a href="blogs.html" class="text-black font-bold navlinks">SERVICES</a>
+      </div>
+
+      <!-- SEARCH BAR -->
+      <div class="hidden md:flex space-x-20">
+        <div>
+          <input
+            class="bg-gray-200 appearance-none border-2 border-gray-200 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 rounded-full"
+            id="inline-full-name" type="text" placeholder="Search">
+        </div>
+      </div>
+
+      <!-- LOGIN BUTTON-->
+      <div class="hidden md:flex space-x-20 ">
+        <div class="md:max-w-sm px-20 md:text-start md:px-0 relative">
+          <a href="#"><button
+              class="relative gradient py-2 px-3 text-md text-white font-semibold rounded-full md:px-6">Login</button>
+          </a>
+        </div>
+      </div>
+
+      <!--HAMBURGER MENU-->
+      <button id="menu-btn" class="block hamburger md:hidden focus: outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!--MOBILE MENU-->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-center hidden self-end py-10 mt-10 space-y-14 font-bold bg-white sm:w-auto sm:self-center top-12 left-0 right-0 drop-shadow-lg">
+        <a href="index.html">HOME</a>
+        <a href="aboutUs.html">ABOUT US</a>
+        <a href="index2.html">EVENTS</a>
+        <a href="blogs.html">BLOGS</a>
+      </div>
+    </div>
+  </nav>
+
+  <!--HERO SECTION-->
+  <section class="" id="hero">
+    <!-- FLEXBOX CONTAINER-->
+    <div class="container mx-auto flex justify-between">
+      <!--LEFT FLEX CONTAINER-->
+      <div class="w-full py-0 px-6 flex flex-col items-center md:flex-row md:px-0">
+
+        <div class="flex flex-col-reverse items-center mb-32 mt-6 space-y-8 md:space-x-12 md:flex-row ">
+          <!--SOCIAL LINKS-->
+          <div class="gradient flex space-x-4 mt-8 md:flex-col md:space-y-4 md:space-x-0 md:items-center p-3 rounded-md"
+            id="social">
+            <a href="#"><img src="/assets/Social Icons/Instagram.svg" class="h-8 md:h-5" alt="link" /></a>
+            <a href="#"><img src="/assets/Social Icons/Whatsapp.svg" class=" h-6 md:h-5" alt="link" /></a>
+            <a href="#"><img src="/assets/Social Icons/Twitter.svg" class="h-6 md:h-5" alt="link" /></a>
+            <a href="#"><img src="/assets/Social Icons/Facebook.svg" class="h-6 md:h-5" alt="link" /></a>
+          </div>
+          <!--SOCIAL LINKS-->
+
+          <div class="flex flex-col space-y-6">
+            <div class="flex flex-col items-center space-y-5 md:items-start ">
+              <div class="flex space-x-4">
+                <p class="max-w-xl text-xs space-y-4 text-lighBlack md:text-3xl font-medium md:text-left">Rural Area
+                  Programme On
+                  Investment for Development (<span class="text-green-500 font-medium">RAPID</span>)</p>
+                <div class="lineup"></div>
+              </div>
+
+              <div class="leading-10">
+                <h1 class="max-w-lg text-center text-black text-4xl font-bold items-start md:text-6xl md:text-left">
+                  Your Gateway to Empowerment and Growth</h1>
+              </div>
+
+              <div class="md:space-y-9">
+                <p class="max-w-lg text-center text-black font-semiBold items-start  md:text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis sapiente animi impedit non
+                  eaque veritatis repellendus molestias iure soluta dolores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF LEFT FLEX CONTAINER -->
+
+      <!-- RIGHT FLEX CONTAINER -->
+      <div class="heroImg w-1/2"></div>
+      <!--END RIGHT FLEX CONTAINER -->
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <section class="container mx-auto items-center md:flex md:justify-between space-x-6 mb-[3rem] mt-0 md:-mt-[6rem]">
+
+    <div class="card flex items-center rounded-full w-full px-6 py-8">
+      <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
+      <div class="text-sm">
+        <h2 class="text-gray-900 text-lg font-bold">Jonathan Reinink</h2>
+        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <div class="card flex items-center rounded-full w-full px-6 py-8">
+      <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
+      <div class="text-sm">
+        <h2 class="text-gray-900 text-lg font-bold">Jonathan Reinink</h2>
+        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <div class="card flex items-center rounded-full w-full px-6 py-8">
+      <img class="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
+      <div class="text-sm">
+        <h2 class="text-gray-900 text-lg font-bold">Jonathan Reinink</h2>
+        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+  </section>
+  <!-- CARDS -->
+</body>
+
+</html>
