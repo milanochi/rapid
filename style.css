@@ -67,6 +67,10 @@ a {
   border-top: 1px solid white;
 }
 
+.accent {
+  color: hsl(357.76deg 52.76% 49.8%);
+}
+
 
 @media (max-width: 760px) {
   .hero {
