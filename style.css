@@ -26,6 +26,10 @@ body {
   margin-top: 12px;
 }
 
+a {
+  color: #333;
+}
+
 .gradient {
   background-image: linear-gradient(rgb(47 173 91), rgb(145 196 57));
 }
