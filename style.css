@@ -69,6 +69,10 @@ a {
 
 
 @media (max-width: 760px) {
+  .hero {
+    border-radius: 0px;
+  }
+
   .hamburger {
     cursor: pointer;
     width: 24px;
